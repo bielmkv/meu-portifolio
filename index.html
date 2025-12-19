@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Web</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h1>Sites profissionais para salões e designers</h1>
+<p>
+  Pare de perder clientes no direct.
+  Tenha um site elegante com agendamento simples e contato direto no WhatsApp.
+</p>
+
+
+    <div class="hero-buttons">
+        <a href="#contact" class="btn">Quero meu site</a>
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" class="btn btn-outline">Falar no WhatsApp</a>
+    </div>
+
+</section>
+
+<section class="proof">
+  <h2>Resultados reais</h2>
+  <p>Sites simples que ajudam negócios locais a se organizarem melhor.</p>
+
+  <div class="proof-cards">
+    <div class="proof-card">
+      <p>
+        “Depois do site, parei de responder mensagens repetidas e os agendamentos ficaram organizados.”
+      </p>
+      <span>— Nail Designer</span>
+    </div>
+
+    <div class="proof-card">
+      <p>
+        “Agora as clientes conseguem falar comigo direto no WhatsApp sem confusão.”
+      </p>
+      <span>— Salão de Beleza</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJETOS -->
+<section id="projects">
+    <h2 class="section-title">Exemplos reais</h2>
+
+    <div class="projects">
+
+        
+
+        <div class="project">
+    <h3>Exemplo Simples <br> Site para Salão de Beleza</h3>
+    <p>
+        <strong>Problema comum:</strong><br>
+        Clientes chamando no direct, horários confusos e mensagens fora do horário.
+    </p>
+    <p>
+  Site elegante com agendamento organizado,
+  botão direto para WhatsApp e visual profissional
+  que passa confiança ao cliente.
+</p>
+
+    <p class="tech">HTML • CSS • JavaScript • WhatsApp</p>
+    <a href="https://bielmkv.github.io/salaoteste/#inicio">Ver exemplo</a>
+</div>
+
+
+        <div class="project">
+  <h3> Site Real para Nail Designer</h3>
+  <p>
+    <strong>Problema comum:</strong><br>
+    Falta de informações claras, agenda desorganizada
+    e clientes perguntando tudo pelo WhatsApp.
+  </p>
+  <p>
+    Página elegante com serviços, valores,
+    botão direto para WhatsApp e agendamento simples.
+  </p>
+  <p class="tech">HTML • CSS • JavaScript • WhatsApp</p>
+  <a href="https://nailsbysuzansantos.vercel.app/">Quero um site assim</a>
+</div>
+
+
+     <div class="project">
+  <h3>Site para Estética e Lash Designer</h3>
+  <p>
+    <strong>Problema comum:</strong><br>
+    Clientes perdidos, excesso de mensagens
+    e dificuldade para organizar atendimentos.
+  </p>
+  <p>
+    Site profissional com apresentação dos serviços,
+    botão de contato e visual que transmite confiança.
+  </p>
+  <p class="tech">HTML • CSS • JavaScript • WhatsApp</p>
+  <a href="#contact">Quero um site assim</a>
+</div>
+
+</section>
+
+<section class="offer">
+  <h2>O que eu entrego</h2>
+  <ul>
+    <li>✔ Site profissional e responsivo</li>
+    <li>✔ Botão de WhatsApp</li>
+    <li>✔ Agendamento simples</li>
+    <li>✔ Suporte inicial</li>
+  </ul>
+</section>
+
+
+<!-- SOBRE -->
+<section id="about" class="about">
+    <h2 class="section-title">Sobre mim</h2>
+    <p>
+    Desenvolvo sites pensados especialmente para salões,
+    nail designers e profissionais da beleza que querem
+    mais organização, profissionalismo e clientes.
+    <br><br>
+    Meu foco é criar soluções simples, bonitas e fáceis de usar,
+    sem complicação.
+</p>
+
+</section>
+
+<!-- CONTATO -->
+<section id="contact" class="contact">
+    <h2>Vamos deixar seu salão mais profissional</h2>
+<p>
+  Um site simples pode aumentar seus agendamentos
+  e passar mais confiança para suas clientes.
+</p>
+<a href="https://wa.me/55SEUNUMERO" class="btn">
+Solicitar orçamento
+</a>
+
+</section>
+
+<footer>
+    <p>© 2025 • Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+<script src="script.js"></script>
+</body>
+
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+/* =====================
+   VARIÁVEIS
+===================== */
+:root {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #181818;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b5b5b5;
+  --accent: #c9a26a; /* dourado/nude elegante */
+  --border: rgba(201, 162, 106, 0.3);
+}
+
+
+
+/* =====================
+   RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* =====================
+   BODY
+===================== */
+body {
+    background: linear-gradient(135deg, var(--bg-primary), #0f0f0f);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 18px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-family: 'Orbitron', monospace;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(
+        circle at top,
+        #1b2030 0%,
+        var(--bg-primary) 60%
+    );
+    border-radius: 0 0 32px 32px;
+    box-shadow: none;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.hero h1,
+.section-title,
+.project h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 80px auto;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 20px auto 40px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.proof {
+  text-align: center;
+}
+
+.proof-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.proof-card {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.offer {
+  text-align: center;
+}
+
+.offer ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.offer li {
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+}
+
+
+/* =====================
+   BOTÕES
+===================== */
+/* =====================
+   BOTÕES
+===================== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background-color: var(--accent);
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+/* Botão secundário (outline) */
+.btn-outline {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+
+
+/* =====================
+   SECTIONS
+===================== */
+section {
+    padding: 90px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    color: var(--accent);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+}
+
+/* =====================
+   PROJETOS
+===================== */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.project {
+    background: var(--bg-secondary);
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: none;
+    transition: transform 0.3s;
+}
+
+
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.project p {
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.project .tech {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.project a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =====================
+   SOBRE / CONTATO
+===================== */
+.about{
+    background: linear-gradient(135deg, var(--bg-secondary), #1f1f1f);
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid var(--accent);
+    box-shadow: 0 15px 40px var(--shadow);
+}
+
+.contact {
+    margin-top: 100px;
+    background: linear-gradient(135deg, var(--bg-secondary), #1f1f1f);
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid var(--accent);
+    box-shadow: 0 15px 40px var(--shadow);
+}
+
+.contact p {
+    margin-bottom: 35px; /* espaço entre o texto e o botão */
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--accent);
+    color: var(--text-secondary);
+}
+
+/* =====================
+   RESPONSIVO
+===================== */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .about, .contact {
+        padding: 35px;
+    }
+}
